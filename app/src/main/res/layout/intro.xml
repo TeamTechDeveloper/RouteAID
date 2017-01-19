@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/techteam"
         app:cfl_border="true"
-        app:cfl_wave_color="#830016"
+        app:cfl_wave_color="#6e0012"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
         android:layout_marginTop="80dp" />

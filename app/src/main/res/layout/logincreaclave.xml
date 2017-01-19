@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:enabled="true"
             android:gravity="center"
-            android:hint="Valida tu Codigo de Usuario"
+            android:hint="Crear Clave por Primera Vez"
             android:elevation="1dp"
             android:inputType="numberPassword" />
     </LinearLayout>
@@ -56,7 +56,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Validar Usuario"
+            android:text="Crear Clave"
             android:id="@+id/botonlogin"
             android:textColor="@color/colorBlack"
             android:clickable="false"

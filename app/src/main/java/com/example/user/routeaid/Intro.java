@@ -102,8 +102,8 @@ public class Intro extends AppCompatActivity {
                                         //Status update in textview
                                         textView.setText(progressStatusCounter + "/" + androidProgressBar.getMax());
 
-                                      //  Intent Login = new Intent(getApplicationContext(), MainActivity.class);
-                                       // startActivity(Login);
+                                      Intent Login = new Intent(getApplicationContext(), Login.class);
+                                       startActivity(Login);
                                     }
                                 });
                                 try {

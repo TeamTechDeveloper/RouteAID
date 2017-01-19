@@ -10,14 +10,14 @@ import android.widget.Button;
  * Created by user on 01/12/2016.
  */
 
-public class Login extends AppCompatActivity {
+public class Loginclave extends AppCompatActivity {
 
     Button botonlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.loginclave);
 
         //////////////////ACCION BOTON PARA SIGUIENTE PAGINA ///////////////////////////
 
@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
         botonlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent botonsiguno = new Intent(Login.this, Loginclave.class);
+                Intent botonsiguno = new Intent(Loginclave.this, MainActivity.class);
                 startActivity(botonsiguno);
             }
         });

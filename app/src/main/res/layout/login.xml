@@ -42,7 +42,7 @@
             android:gravity="center"
             android:hint="Valida tu Codigo de Usuario"
             android:elevation="1dp"
-            android:inputType="numberPassword" />
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <LinearLayout

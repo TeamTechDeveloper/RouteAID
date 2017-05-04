@@ -36,13 +36,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:ems="10"
-            android:id="@+id/codigologin"
+            android:id="@+id/contrasenalogin"
             android:layout_weight="1"
             android:enabled="true"
             android:gravity="center"
             android:hint="Valida tu contraseña"
             android:elevation="1dp"
-            android:inputType="numberPassword" />
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Recordar Contraseña"
-            android:id="@+id/textView2"
+            android:id="@+id/recordarContrasena"
             android:textAlignment="center"
             android:textColor="@color/colorWhite" />
 

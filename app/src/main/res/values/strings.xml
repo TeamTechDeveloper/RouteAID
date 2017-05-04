@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RouteAID</string>
+    <string name="title_activity_lista_rutas">ListaRutas</string>
 </resources>

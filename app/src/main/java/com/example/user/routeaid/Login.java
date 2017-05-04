@@ -20,7 +20,9 @@ public class Login extends AppCompatActivity implements ManejoDB.OnPostExecute {
     EditText EtxCodigoLogin;
 
     //base de datos
-    String urlConsultaCodigoEstadoUsuario = "http://www.talentsw.com/RoutAid/consultaCodigoUsuario.php";
+    String urlExisteCodigo = "http://www.talentsw.com/RoutAid/SiExisteCodigo.php";
+    String urlEstadoCuenta = "http://www.talentsw.com/RoutAid/EstadoDeLaCuenta.php";
+    String urlPrimeraVez = "http://www.talentsw.com/RoutAid/TieneContrasenaLaCuenta.php";
     String[] datos = {"codigoCuenta", "estadoCuenta", "contraasenaCuenta"};
     ManejoDB consultaCodigo;
     ManejoDB consultaEstadoCuenta;
@@ -59,13 +61,13 @@ public class Login extends AppCompatActivity implements ManejoDB.OnPostExecute {
                 queDelegate = 1;
 
                 //consultas a la base de datos
-                consultaCodigo = new ManejoDB("CONSULTA",datos[0],urlConsultaCodigoEstadoUsuario,"POST");;
+                consultaCodigo = new ManejoDB("CONSULTA",datos[0],urlExisteCodigo,"POST");;
                 consultaCodigo.delegate = Login.this;
 
-                consultaEstadoCuenta = new ManejoDB("CONSULTA",datos[1],urlConsultaCodigoEstadoUsuario,"POST");
+                consultaEstadoCuenta = new ManejoDB("CONSULTA",datos[1],urlEstadoCuenta,"POST");
                 consultaEstadoCuenta.delegate = Login.this;
 
-                consultaContrasena = new ManejoDB("CONSULTA",datos[2],urlConsultaCodigoEstadoUsuario,"POST");
+                consultaContrasena = new ManejoDB("CONSULTA",datos[2],urlPrimeraVez,"POST");
                 consultaContrasena.delegate = Login.this;
 
                 consultaCodigo.execute(variablesPOST,valoresPOST);

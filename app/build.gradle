@@ -31,5 +31,6 @@ dependencies {
     compile 'com.mikhaellopez:circularfillableloaders:1.2.0'
     compile 'com.larswerkman:lobsterpicker:1.0.0'
     compile 'org.adw.library:discrete-seekbar:1.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta3'
     testCompile 'junit:junit:4.12'
 }

@@ -106,9 +106,9 @@ public class Logincreaclave extends AppCompatActivity implements ManejoDB.OnPost
                 switch (perfil){
                     case "Conductor":
                         Toast.makeText(getApplicationContext(),"CONDUCTOR",Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(getApplicationContext(),ListaRutas.class);
-                        intent.putExtra("codigoLogin",codigoLogin);
-                        startActivity(intent);
+                      //  Intent intent = new Intent(getApplicationContext(),ListaRutas.class);
+                      //  intent.putExtra("codigoLogin",codigoLogin);
+                     //   startActivity(intent);
                         break;
                     case "Alumno":
                         Toast.makeText(getApplicationContext(),"ALUMNO",Toast.LENGTH_LONG).show();

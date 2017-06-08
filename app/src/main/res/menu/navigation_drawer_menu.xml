@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Módulos">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:checked="true"
+            android:id="@+id/item_navigation_drawer_inbox"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/item_navigation_drawer_starred"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="Mapas" />
+        <item
+            android:id="@+id/item_navigation_drawer_sent_mail"
+            android:icon="@drawable/ic_videocam_black_24dp"
+            android:title="Camara" />
+
+    </group>
+    </item>
+    <item android:title="Configuración">
+        <menu>
+            <item
+                android:id="@+id/item_navigation_drawer_settings"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Ayuda" />
+        </menu>
+    </item>
+
+</menu>

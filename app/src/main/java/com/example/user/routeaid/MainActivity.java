@@ -67,26 +67,26 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         textView = (TextView) findViewById(R.id.textView);
                         switch (menuItem.getItemId()) {
-                            case R.id.item_navigation_drawer_inbox:
+                            case R.id.item_navigation_drawer_index:
                                 menuItem.setChecked(true);
                                 textView.setText(menuItem.getTitle());
                                 drawerLayout.closeDrawer(GravityCompat.START);
                                 return true;
-                            case R.id.item_navigation_drawer_starred:
+                            case R.id.item_navigation_drawer_maps:
                                 menuItem.setChecked(true);
                                 textView.setText(menuItem.getTitle());
                                 drawerLayout.closeDrawer(GravityCompat.START);
                                 Intent intent = new Intent(MainActivity.this, Prueba.class);
                                 startActivity(intent);
                                 return true;
-                            case R.id.item_navigation_drawer_sent_mail:
+                            case R.id.item_navigation_drawer_cam:
                                 menuItem.setChecked(true);
                                 textView.setText(menuItem.getTitle());
                                 drawerLayout.closeDrawer(GravityCompat.START);
                                 Intent intent1 = new Intent(MainActivity.this, Registro.class);
                                 startActivity(intent1);
                                 return true;
-                            case R.id.item_navigation_drawer_settings:
+                            case R.id.item_navigation_drawer_help:
                                 menuItem.setChecked(true);
                                 textView.setText(menuItem.getTitle());
                                 Toast.makeText(MainActivity.this, "Launching " + menuItem.getTitle().toString(), Toast.LENGTH_SHORT).show();

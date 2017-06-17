@@ -127,7 +127,7 @@ public class Loginclave extends AppCompatActivity implements ManejoDB.OnPostExec
 
                 switch (perfil){
                     case "Conductor":
-                        Toast.makeText(getApplicationContext(),codigoLogin,Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"CONDUCTOR",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(getApplicationContext(),ListaRutas.class);
                         intent.putExtra("codigoLogin",codigoLogin);
                         startActivity(intent);

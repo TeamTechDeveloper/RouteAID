@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,34 +15,52 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/status_bar_kitkat_height"
-            android:background="?colorPrimary"/>
+            android:background="?colorPrimary" />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/status_bar_lollipop_height"
-            android:background="?colorPrimaryDark"/>
+            android:background="@color/colorPrimary" />
 
     </LinearLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/status_bar_margin_top">
+        android:layout_marginTop="@dimen/status_bar_margin_top"
+        android:background="@drawable/inicio"
+        android:elevation="1dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="169dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="296dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Inbox"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="80dp"
+            android:text="Bienvenido/a a Rout ID, para nosotros es un orgullo contar con usted como usuario de nuestra aplicacion, aqui podra monitorear a su hijo/a por medio de cualquier dispositivo movil android, tener a la mano detalles de la ruta, paradas y demas datos de interes que le brindaran la tranquilidad de un exitoso arribo de su hijo/a al destino deseado."
+            android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="@color/md_text" />
+            android:textColor="@color/md_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/colorPrimaryDark"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:theme="@style/ToolbarTheme" />

@@ -660,7 +660,7 @@
         <item>@color/md_disabled_hint_text</item>
         <item>@color/md_divider</item>
     </array>
-    <color name="md_text">#df000000</color>
+    <color name="md_text">#dfffffff</color>
     <color name="md_secondary_text_icons">#8a000000</color>
     <color name="md_disabled_hint_text">#4c000000</color>
     <color name="md_divider">#1f000000</color>

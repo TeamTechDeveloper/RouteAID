@@ -9,11 +9,11 @@
         android:background="?colorPrimary"/>
 
     <android.support.v7.widget.Toolbar
-        android:layout_marginTop="@dimen/status_bar_margin_top"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:layout_marginTop="@dimen/status_bar_margin_top"
+        android:background="@color/colorPrimary"
         android:elevation="4dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ToolbarTheme" />
